@@ -6,7 +6,12 @@ body {
 	background: linear-gradient(180deg, #110101 0%, rgba(13, 2, 2, 0.52) 100%);
 }
 
+.wrapper {
+}
+
 .container {
+	position: relative;
+
 	max-width: 370px;
 	width: 100%;
 	margin: 0 auto;
@@ -84,13 +89,14 @@ body {
 /* End Main Page Styles */
 
 .privacy {
-	position: fixed;
-	top: 10px;
+	position: absolute;
+	top: 0;
 	left: 0;
 	transform: translateX(400px);
 	opacity: 0;
 	margin: 0 auto;
 	max-width: 370px;
+	width: 100%;
 	padding: 0 10px;
 	z-index: 2;
 	background: linear-gradient(180deg, #110101 0%, rgba(13, 2, 2, 1) 100%);
@@ -106,6 +112,7 @@ body {
 	display: flex;
 	align-items: center;
 	margin-bottom: 25px;
+	padding-top: 15px;
 }
 .privacy__back {
 	cursor: pointer;
