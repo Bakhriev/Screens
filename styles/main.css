@@ -24,6 +24,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
+
 .title {
 	font-size: 23px;
 	font-weight: 700;
@@ -102,6 +103,7 @@ body {
 	transition: 0.2s ease-in-out all;
 	background: linear-gradient(180deg, #110101 0%, rgba(13, 2, 2, 1) 100%);
 }
+
 .privacy.active {
 	opacity: 1;
 	transform: translateX(0);
@@ -119,9 +121,11 @@ body {
 	margin-bottom: 25px;
 	padding-top: 15px;
 }
+
 .privacy__back {
 	cursor: pointer;
 }
+
 .privacy__title {
 	text-align: center;
 }
@@ -148,4 +152,18 @@ body {
 .privacy__content::-webkit-scrollbar {
 	width: 0;
 	height: 0;
+}
+
+@media screen and (min-width: 500px) {
+	.container {
+		max-width: 500px;
+	}
+
+	.card {
+		flex: 0 1 31%;
+	}
+
+	.privacy__body {
+		max-width: 500px;
+	}
 }
