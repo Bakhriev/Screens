@@ -77,6 +77,62 @@ body {
 	height: 0;
 }
 
-.privacy {
+.privacy-icon {
 	cursor: pointer;
+}
+
+/* End Main Page Styles */
+
+.privacy {
+	position: fixed;
+	top: 10px;
+	transform: translateX(400px);
+	opacity: 0;
+	margin: 0 auto;
+	max-width: 370px;
+	padding: 0 10px;
+	z-index: 2;
+	background: linear-gradient(180deg, #110101 0%, rgba(13, 2, 2, 1) 100%);
+	color: #fff;
+	transition: 0.2s ease-in-out all;
+}
+.privacy.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.privacy__header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.privacy__back {
+	cursor: pointer;
+}
+.privacy__title {
+	text-align: center;
+}
+
+.privacy__content {
+	overflow: auto;
+	border: 2px solid #fff8f8;
+	border-radius: 20px;
+	padding: 10px;
+	padding-bottom: 20px;
+	max-height: calc(100vh - 50px);
+}
+
+.privacy__text {
+	text-align: center;
+}
+
+.privacy__content {
+	overflow: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.privacy__content::-webkit-scrollbar {
+	width: 0;
+	height: 0;
 }
