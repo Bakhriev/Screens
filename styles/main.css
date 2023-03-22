@@ -86,6 +86,7 @@ body {
 .privacy {
 	position: fixed;
 	top: 10px;
+	left: 0;
 	transform: translateX(400px);
 	opacity: 0;
 	margin: 0 auto;
